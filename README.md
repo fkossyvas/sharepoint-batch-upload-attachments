@@ -34,9 +34,3 @@ $sharepoint_list_name
 
 $sharepoint_list_uuid_field_name
 
-
-### Why did i created this ?
-I migrated an old app which was holding it's data on rows in DBMS with file attachments to them as BLOBs. 
-The easiest way to do the porting to Sharepoint was updating all the rows by adding a column with an unique 32 byte id in each one of them and then downloading them. 
-The next step was downloading the attachments from BLOBs adding at the beginning of to their filename the 32 byte id plus the undescore character.
-After that, i wrote this script ;-)
